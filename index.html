@@ -88,10 +88,14 @@
         </div>
       </div>
 
-      <div class="card" id="hob" onclick="scrollToSection('me-content')">
+      <div
+        class="card"
+        id="hob"
+        onclick="scrollToSection('stage-a2o-content')"
+      >
         <div class="card-inner">
-          <i class="fa-solid fa-basketball"></i>
-          <span>Loisirs</span>
+          <div class="card-mono-logo">A2Ω</div>
+          <span>Alpha to Omega</span>
         </div>
       </div>
 
@@ -329,9 +333,144 @@
       </div>
     </section>
 
+    <section id="stage-a2o-content" class="page-section">
+      <div class="section-title reveal">
+        <h1 style="color: var(--color-blue)">// 04. Alpha to Omega</h1>
+        <p>Candidature de Stage</p>
+      </div>
+
+            <div class="a2o-layout-wrapper reveal">
+                <div class="a2o-intro-side">
+          <div>
+            <div class="a2o-side-badge">STAGE 2026</div>
+            <h2 class="a2o-side-heading">Candidature de stage Master 1 Alpha to Omega (3mois durée Mai-Juillet)</h2>
+          </div>
+
+          <div class="a2o-tab-nav">
+            <button class="a2o-tab-btn active" onclick="showA2oCard(0)">
+              <span class="tab-num">01</span>
+              <span class="tab-text">Pourquoi ce stage ?</span>
+            </button>
+            <button class="a2o-tab-btn" onclick="showA2oCard(1)">
+              <span class="tab-num">02</span>
+              <span class="tab-text">Comment j'utilise l'IA ?</span>
+            </button>
+            <button class="a2o-tab-btn" onclick="showA2oCard(2)">
+              <span class="tab-num">03</span>
+              <span class="tab-text">Mon profil &amp; ma façon d'apprendre</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="a2o-deck-wrapper" id="a2oDeck">
+          <article
+            class="a2o-reading-card card-blue is-active"
+            id="a2o-card-0"
+            data-index="0"
+            onclick="handleCardClick(0)"
+            tabindex="0"
+            role="region"
+            aria-label="01. Pourquoi ce stage ?"
+          >
+            <div class="reading-card-header">
+              <span class="reading-badge tag-blue">// 01. POURQUOI CE STAGE ?</span>
+              <span class="reading-counter">1 / 3</span>
+            </div>
+            <h3>Pourquoi Alpha to Omega ?</h3>
+            <div class="reading-card-body">
+              <p>
+                Ce qui me plaît dans ce stage, c'est surtout la possibilité de créer des sites qui ont leur propre univers.
+              </p>
+              <p>
+                J'aime partir d'une idée et essayer de la transformer en une interface qui fonctionne vraiment. Le site que vous voyez ici a par exemple été entièrement imaginé et designé par mes soins sur Figma, puis développé avec l'aide de l'IA.
+              </p>
+              <p>
+                C'est aussi pour ça que je veux travailler dans ce milieu : j'aime devoir partir de contraintes données et trouver une manière de créer quelque chose qui me ressemble tout en répondant au besoin du client.
+              </p>
+            </div>
+            <div class="reading-card-footer">
+              <button class="reading-next-btn" type="button" onclick="event.stopPropagation(); showA2oCard(1);">
+                Suivant : Comment j'utilise l'IA ? →
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="a2o-reading-card card-pink is-next"
+            id="a2o-card-1"
+            data-index="1"
+            onclick="handleCardClick(1)"
+            tabindex="0"
+            role="region"
+            aria-label="02. Comment j'utilise l'IA ?"
+          >
+            <div class="reading-card-header">
+              <span class="reading-badge tag-pink">// 02. COMMENT J'UTILISE L'IA ?</span>
+              <span class="reading-counter">2 / 3</span>
+            </div>
+            <h3>L'IA dans ma façon de travailler</h3>
+            <div class="reading-card-body">
+              <p>
+                Pour créer ce site, j'ai d'abord réalisé toute la partie design sur Figma, puis je suis passé au développement avec Antigravity.
+              </p>
+              <p>
+                L'IA est donc présente tout au long de mon travail. J'ai une idée, une fonctionnalité ou un rendu que je veux obtenir, et je m'en sers pour trouver comment le réaliser techniquement.
+              </p>
+              <p>
+                Je ne vois pas l'IA comme quelque chose qui crée à ma place. Elle me permet surtout de dépasser les limites techniques que j'ai encore aujourd'hui et de donner vie à des idées que je n'aurais pas forcément pu réaliser seul.
+              </p>
+            </div>
+            <div class="reading-card-footer">
+              <button class="reading-prev-btn" type="button" onclick="event.stopPropagation(); showA2oCard(0);">
+                ← Précédent
+              </button>
+              <button class="reading-next-btn" type="button" onclick="event.stopPropagation(); showA2oCard(2);">
+                Suivant : Mon profil &amp; façon d'apprendre →
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="a2o-reading-card card-yellow is-last"
+            id="a2o-card-2"
+            data-index="2"
+            onclick="handleCardClick(2)"
+            tabindex="0"
+            role="region"
+            aria-label="03. Mon profil &amp; ma façon d'apprendre"
+          >
+            <div class="reading-card-header">
+              <span class="reading-badge tag-yellow">// 03. MON PROFIL &amp; FAÇON D'APPRENDRE</span>
+              <span class="reading-counter">3 / 3</span>
+            </div>
+            <h3>Profil &amp; démarche</h3>
+            <div class="reading-card-body">
+              <p>
+                Je suis quelqu'un de curieux dans les domaines qui m'intéressent. Cette curiosité m'a notamment poussé à commencer à créer des affiches et à apprendre davantage le design, pour mieux comprendre ce dont j'aurai besoin dans mon futur métier.
+              </p>
+              <p>
+                Aujourd'hui, j'ai surtout envie de progresser dans ma manière de créer. Je veux apprendre à concevoir de meilleures interfaces, à mieux répondre aux demandes d'un client et à trouver le bon équilibre entre mes idées et les contraintes d'un projet.
+              </p>
+              <p>
+                Mon objectif est simple : continuer à apprendre pour pouvoir créer des designs dont je peux être fier, tout en faisant en sorte qu'ils correspondent réellement à ce que le client attend.
+              </p>
+            </div>
+            <div class="reading-card-footer">
+              <button class="reading-prev-btn" type="button" onclick="event.stopPropagation(); showA2oCard(1);">
+                ← Précédent
+              </button>
+              <button class="reading-next-btn" type="button" onclick="event.stopPropagation(); showA2oCard(0);">
+                Revenir au début (01) ↺
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="Crea-content" class="page-section">
       <div class="section-title reveal">
-        <h1 style="color: var(--color-cyan)">// 04. Mes créations</h1>
+        <h1 style="color: var(--color-cyan)">// 05. Mes créations</h1>
         <p>Mes créations présentes et futures</p>
       </div>
 
@@ -442,7 +581,7 @@
 
     <section id="contact-content" class="page-section">
       <div class="section-title">
-        <h1 style="color: var(--color-dark)">// 05. Contact</h1>
+        <h1 style="color: var(--color-dark)">// 06. Contact</h1>
       </div>
       <div class="contact-wrapper">
         <p>Vous avez un projet en tête ou juste envie de dire bonjour ?</p>
@@ -576,8 +715,6 @@
           },
         );
         revealElements.forEach((el) => revealObserver.observe(el));
-
-        // --- Accessibilité : Navigation au clavier pour les cartes ---
         const cards = document.querySelectorAll(".card[onclick]");
         cards.forEach((card) => {
           card.setAttribute("role", "button");
@@ -599,8 +736,6 @@
             }
           });
         });
-
-        // --- Bouton Remonter ---
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
         window.addEventListener("scroll", () => {
@@ -626,9 +761,54 @@
         }
       }
 
+      let currentA2oIndex = 0;
+
+      function updateDeckHeight() {
+        const deck = document.getElementById("a2oDeck");
+        if (!deck) return;
+        const activeCard = deck.querySelector(".a2o-reading-card.is-active");
+        if (activeCard) {
+          const cardHeight = activeCard.scrollHeight || activeCard.offsetHeight;
+          if (cardHeight > 0) {
+            deck.style.minHeight = (cardHeight + 24) + "px";
+          }
+        }
+      }
+
+      function showA2oCard(index) {
+        currentA2oIndex = index;
+        const cards = document.querySelectorAll(".a2o-reading-card");
+        const btns = document.querySelectorAll(".a2o-tab-btn");
+
+        btns.forEach((btn, i) => btn.classList.toggle("active", i === index));
+
+        const total = cards.length;
+        cards.forEach((card, i) => {
+          card.classList.remove("is-active", "is-next", "is-last");
+          const offset = (i - index + total) % total;
+          if (offset === 0) {
+            card.classList.add("is-active");
+          } else if (offset === 1) {
+            card.classList.add("is-next");
+          } else {
+            card.classList.add("is-last");
+          }
+        });
+
+        setTimeout(updateDeckHeight, 50);
+      }
+
+      function handleCardClick(index) {
+        if (index !== currentA2oIndex) {
+          showA2oCard(index);
+        }
+      }
+
       function scrollCarousel(direction) {}
 
       document.addEventListener("DOMContentLoaded", () => {
+        updateDeckHeight();
+        window.addEventListener("resize", updateDeckHeight);
         const carousel = document.getElementById("creationsCarousel");
         if (carousel) {
           const content = carousel.innerHTML;
